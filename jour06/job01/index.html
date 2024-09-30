@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaPlateforme</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Pour ajouter ton propre style -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LPTF</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://laplateforme.io/"
+                target="_blank"
+                rel="noopener"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Units</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Section Papillon -->
+        <div class="col-md-3">
+          <div class="card">
+            <img src="papillon.jpg" class="card-img-top" alt="Papillon" />
+            <div class="card-body">
+              <h5 class="card-title">Un Papillon</h5>
+              <p class="card-text">
+                Un papillon, c'est un peu comme une chenille, mais avec des
+                ailes. Ne pas ingérer.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#papillonModal"
+                >Commander votre propre papillon</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Section principale Bonjour, monde! -->
+        <div class="col-md-6">
+          <h1 class="display-4">Bonjour, monde!</h1>
+          <div id="jumbotron-text">
+            <p>Il existe plusieurs visions du terme :</p>
+            <ul>
+              <li>
+                Le monde est la matière, l'espace et les phénomènes qui nous
+                sont accessibles par les sens, l'expérience ou la raison.
+              </li>
+              <li>
+                Le sens le plus courant désigne notre planète, la Terre, avec
+                ses habitants et son environnement plus ou moins naturel.
+              </li>
+            </ul>
+          </div>
+          <button id="rebootButton" class="btn btn-danger">
+            Rebooter le Monde
+          </button>
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <!-- Pagination au bas du jumbotron -->
+        <ul class="pagination">
+          <li class="page-item">
+            <a id="page1" class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a id="page2" class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a id="page3" class="page-link" href="#">3</a>
+          </li>
+        </ul>
+
+        <!-- Section de droite - Limbo -->
+        <div class="col-md-3">
+          <ul class="list-group">
+            <li class="list-group-item active">Limbes</li>
+            <li class="list-group-item">Luxure</li>
+            <li class="list-group-item">Gourmandise</li>
+            <li class="list-group-item">Avarice</li>
+            <li class="list-group-item">Colère</li>
+            <li class="list-group-item">Hérésie</li>
+            <li class="list-group-item">Violence</li>
+            <li class="list-group-item">Ruse et Tromperie</li>
+            <li class="list-group-item">Trahison</li>
+            <li class="list-group-item">Internet Explorer</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section inférieure avec barre de progression et formulaire -->
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <h2>Installation de AI 9000</h2>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+              role="progressbar"
+              style="width: 60%"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire en bas de la page -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h3>Recevez votre copie gratuite d'internet 2 !</h3>
+          <form>
+            <div class="mb-3">
+              <label for="login" class="form-label">Login</label>
+              <input
+                type="text"
+                class="form-control"
+                id="login"
+                placeholder="@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Mot de passe</label>
+              <input type="password" class="form-control" id="password" />
+            </div>
+            <div class="mb-3">
+              <label for="dogecoin" class="form-label"
+                >URL des Internets 2 et 2.1 Beta</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="dogecoin"
+                value="DogeCoin"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="url" class="form-label">URL</label>
+              <input
+                type="url"
+                class="form-control"
+                id="url"
+                value="https://l33t.lptf/dkwb/berlusconimkt/"
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- Formulaire de droite -->
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="password2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password2" />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkMeOut" />
+              <label class="form-check-label" for="checkMeOut"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Bootstrap -->
+    <div
+      class="modal fade"
+      id="papillonModal"
+      tabindex="-1"
+      aria-labelledby="papillonModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="papillonModalLabel">
+              Confirmation d'achat
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Vous avez confirmé l'achat d'un papillon. Merci pour votre commande
+            !
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Ton script -->
+    <script src="script.js"></script>
+  </body>
+</html>

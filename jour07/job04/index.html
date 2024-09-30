@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte</title>
+    <!-- Inclure le CDN MaterializeCSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Inclure Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header avec la navigation, coloré et aligné avec MaterializeCSS -->
+    <header>
+        <nav class="blue darken-2">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Mon Site</a>
+                <ul id="nav-mobile" class="right">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section avec le formulaire de création de compte -->
+    <section class="container">
+        <h2>Création de compte</h2>
+        <form action="#" method="post">
+
+            <!-- Civilité -->
+            <fieldset>
+                <legend>Civilité</legend>
+                <p>
+                    <label>
+                        <input name="civilite" type="radio" value="monsieur" />
+                        <span>Monsieur</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="civilite" type="radio" value="madame" />
+                        <span>Madame</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="civilite" type="radio" value="autre" />
+                        <span>Autre</span>
+                    </label>
+                </p>
+            </fieldset>
+
+            <!-- Informations personnelles -->
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" id="prenom" name="prenom">
+                    <label for="prenom">Prénom</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" id="nom" name="nom">
+                    <label for="nom">Nom</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">location_on</i>
+                    <input type="text" id="adresse" name="adresse">
+                    <label for="adresse">Adresse</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email" name="email">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" id="password" name="password">
+                    <label for="password">Mot de passe</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                    <label for="confirm_password">Confirmer le mot de passe</label>
+                </div>
+            </fieldset>
+
+            <!-- Passions -->
+            <fieldset>
+                <legend>Passions</legend>
+                <p>
+                    <label>
+                        <input type="checkbox" id="informatique" name="passions" value="informatique" />
+                        <span>Informatique</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" id="voyages" name="passions" value="voyages" />
+                        <span>Voyages</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" id="sport" name="passions" value="sport" />
+                        <span>Sport</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" id="lecture" name="passions" value="lecture" />
+                        <span>Lecture</span>
+                    </label>
+                </p>
+            </fieldset>
+
+            <!-- Bouton de validation -->
+            <button class="btn waves-effect waves-light" type="submit">
+                Créer un compte
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer avec des classes Materialize, coloré et aligné -->
+    <footer class="page-footer blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Mon Site</h5>
+                    <p class="grey-text text-lighten-4">Inscrivez-vous et profitez de tous nos services.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Navigation</h5>
+                    <ul>
+                        <li><a href="index.html" class="grey-text text-lighten-3">Accueil</a></li>
+                        <li><a href="index.html" class="grey-text text-lighten-3">Inscription</a></li>
+                        <li><a href="index.html" class="grey-text text-lighten-3">Connexion</a></li>
+                        <li><a href="index.html" class="grey-text text-lighten-3">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 Mon Site
+                <a class="grey-text text-lighten-4 right" href="#!">Plus d'infos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inclure le fichier JS de Materialize (optionnel si vous utilisez des composants JavaScript de Materialize) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

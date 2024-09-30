@@ -1,0 +1,32 @@
+/* style.css */
+
+/* Ajustement pour la page */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Style pour le spinner de chargement */
+.spinner-border {
+  margin-left: 10px;
+}
+
+/* Couleur personnalisée du spinner sans casser l'animation */
+.spinner-border {
+  border-top-color: #3498db; /* Définir une couleur par défaut */
+}
+
+/* Ajout d'une marge au formulaire */
+form {
+  margin-top: 20px;
+}
+
+/* Progrès de l'IA */
+.progress-bar {
+  height: 25px;
+  font-size: 1rem;
+}
+
+/* Dans le fichier style.css */
+.progress-bar-custom {
+  width: 60%;
+}
